@@ -118,6 +118,9 @@ def find_eq(reql:list, solution:int, n=100):
 
 ##### pygame
 
+# this pygame script draws 24 (or any specified number of) nodes and then connects 
+# the solution nodes with colored lines denoting the operations used and the path taken
+            
 import numpy as np
 import pygame
 pygame.font.init()
@@ -174,6 +177,7 @@ for i in range(num_s-1):
         color = red
     elif g[2][i][0] == '/':
         color = black
+
     pygame.draw.line(screen, color, posgraph[graph[i]], posgraph[graph[i+1]], 7)
 
 while running:
