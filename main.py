@@ -116,7 +116,7 @@ def find_eq(reql:list, solution:int, n=100):
     
     return [len(l), length, l]
 
-##### python
+##### pygame
 
 import numpy as np
 import pygame
